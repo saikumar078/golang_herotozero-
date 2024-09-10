@@ -1,0 +1,25 @@
+how to create the executable file in go (linux)
+
+go build hello.go (filename)
+
+2. Rebuild the Executable
+
+If your Go code is correct and you’re still seeing the configuration error, rebuild the executable to ensure you’re running
+ the latest version of your code:
+
+ go build -o helloworld helloworld.go
+
+3. Run the Executable
+=======================
+./filename  (without .go)
+
+
+Golang doesn't rely on a virtual machine for code compilation and 
+is directly compiled from the binary file. 
+That's why it is much faster than Java when it comes to application development.
+ Golang's automatic garbage collection also contributes to its speed and makes it much faster than Java.
+
+
+Run time
+In one test, a Go program ran a regex in 3.55 seconds,
+ while the same test in Java took 5.58 seconds.
