@@ -23,3 +23,13 @@ That's why it is much faster than Java when it comes to application development.
 Run time
 In one test, a Go program ran a regex in 3.55 seconds,
  while the same test in Java took 5.58 seconds.
+
+
+
+ Go Syntax
+A Go file consists of the following parts:
+
+Package declaration
+Import packages
+Functions
+Statements and expressions
