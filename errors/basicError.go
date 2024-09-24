@@ -1,21 +1,42 @@
+// package main
+
+// import (
+// 	"errors"
+// 	"fmt"
+// )
+
+// func DoSomething() error {
+// 	return errors.New("something went wrong")
+// }
+
+// func main() {
+// 	err := DoSomething()
+// 	if err != nil {
+// 		// If there's an error, print it
+// 		fmt.Println("Error:", err)
+// 	} else {
+// 		// No error
+// 		fmt.Println("Success!")
+// 	}
+// }
+
 package main
 
-import (
-	"errors"
-	"fmt"
-)
+import "fmt"
 
-func DoSomething() error {
-	return errors.New("something went wrong")
+type MyError struct {
+	msg string
 }
 
+func (E MyError) Error() string {
+	return "wrong msg "
+}
 func main() {
-	err := DoSomething()
-	if err != nil {
-		// If there's an error, print it
-		fmt.Println("Error:", err)
-	} else {
-		// No error
-		fmt.Println("Success!")
+	MyError := MyError{
+		msg: "hello",
+		
 	}
+
+	fmt.Println(MyError)
+
 }
